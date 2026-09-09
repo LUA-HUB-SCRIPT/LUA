@@ -1,0 +1,23 @@
+{
+  "generatedAt": "initial-build",
+  "scripts": [
+    {
+      "name": "Script1",
+      "path": "Scripts/script1.lua"
+    },
+    {
+      "name": "Script2",
+      "path": "Scripts/script2.lua"
+    }
+  ],
+  "games": [
+    {
+      "name": "Game1",
+      "url": "https://example.com/game1"
+    },
+    {
+      "name": "Game2",
+      "url": "https://example.com/game2"
+    }
+  ]
+}

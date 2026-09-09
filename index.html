@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="LUA — developer helper untuk koleksi script dan game.">
+  <title>LUA — Developer Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="LUA Home">
+      <span class="brand-mark">L</span>
+      <span>LUA</span>
+    </a>
+    <nav>
+      <a href="#home" data-page-link="home">Home</a>
+      <a href="#games" data-page-link="games">Games</a>
+      <a href="#key" data-page-link="key">Key</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="page active">
+      <div class="hero">
+        <div>
+          <p class="eyebrow">DEVELOPER HUB</p>
+          <h1>Simple tools.<br><span>Clean scripts.</span></h1>
+          <p class="hero-copy">
+            Tempat untuk menyimpan, membaca, dan menyalin koleksi script Lua
+            dengan tampilan modern tanpa database.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#scripts">Browse Scripts</a>
+            <a class="btn ghost" href="#key">Get Key</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="window-dots"><i></i><i></i><i></i></div>
+          <pre><code>local project = "LUA"
+print("Ready.")
+
+-- your script here
+return project</code></pre>
+        </div>
+      </div>
+
+      <div class="section-head" id="scripts">
+        <div>
+          <p class="eyebrow">COLLECTION</p>
+          <h2>Lua Scripts</h2>
+        </div>
+        <span class="count" id="scriptCount">0 scripts</span>
+      </div>
+      <div class="grid" id="scriptGrid"></div>
+
+      <div class="credit">
+        <p class="eyebrow">CREDITS</p>
+        <h2>Dibuat untuk developer.</h2>
+        <p>
+          Project ini dibuat sebagai hub sederhana untuk koleksi script dan
+          link game. Tidak memakai database atau backend.
+        </p>
+        <div class="credit-name">LUA Team</div>
+      </div>
+    </section>
+
+    <section id="games" class="page">
+      <div class="page-title">
+        <p class="eyebrow">GAME COLLECTION</p>
+        <h1>Games</h1>
+        <p>Game yang tersedia di project ini. File di folder <code>Games/</code> hanya berisi link.</p>
+      </div>
+      <div class="grid" id="gameGrid"></div>
+    </section>
+
+    <section id="key" class="page">
+      <div class="key-wrap">
+        <p class="eyebrow">ACCESS</p>
+        <h1>Get your <span>24H Key</span></h1>
+        <p>
+          Gunakan link key-system di bawah untuk mendapatkan akses key 24 jam.
+        </p>
+        <a class="btn primary big" href="https://work.ink/2WNS/key-system" target="_blank" rel="noopener noreferrer">
+          Open Key System ↗
+        </a>
+        <div class="notice">
+          <strong>Info</strong>
+          <span>Link key-system dibuka di tab baru.</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© <span id="year"></span> LUA</span>
+    <span>Built for developers</span>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
